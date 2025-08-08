@@ -83,16 +83,16 @@ ${menu.group}
 | *SEARCH COMMANDS* |
 ${menu.search}
 
+> > 𝛲𝛩𝑊𝛯𝑅𝐷 𝐵𝑌 ＧIᗰ𝛥𝛥
 
-🥶𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋🥶
 
-> ROBIN MENU MSG
+> GIMAA MENU MSG
 `;
       await robin.sendMessage(
         from,
         {
           image: {
-            url: "https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20menu.jpg",
+            url: "https://i.ibb.co/Qxg4wQP/shaban-md.jpg",
           },
           caption: madeMenu,
         },
