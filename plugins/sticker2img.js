@@ -1,5 +1,5 @@
 const { cmd, commands } = require("../command");
-const { Sticker } = require("");
+const { Sticker } = require("wa-sticker-formatter");
 const { downloadMediaMessage } = require("../lib/msg.js"); // Adjust the path as needed
 const fs = require("fs");
 
@@ -53,8 +53,8 @@ cmd(
 
       // Convert the sticker buffer to an image (using Sticker class)
       const sticker = new Sticker(stickerBuffer, {
-        pack: "𝐑_𝐎_𝐁_𝐈_𝐍",
-        author: "𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋",
+        pack: " 𝛲𝛩𝑊𝛯𝑅𝐷 𝐵𝑌 ＧIᗰ𝛥𝛥",
+        author: " 𝛲𝛩𝑊𝛯𝑅𝐷 𝐵𝑌 ＧIᗰ𝛥𝛥",
         type: "FULL", // This may not be needed, but ensures we're using the full sticker format
         quality: 100, // Quality of the output image (0-100)
       });
@@ -67,7 +67,7 @@ cmd(
         from,
         {
           image: imageBuffer,
-          caption: "Here is your converted image!\n\n𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋",
+          caption: "Here is your converted image!\n\n> > 𝛲𝛩𝑊𝛯𝑅𝐷 𝐵𝑌 ＧIᗰ𝛥𝛥",
         },
         { quoted: mek }
       );
