@@ -11,5 +11,8 @@ module.exports = {
   PREFIX: process.env.PREFIX || ".", 
   ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/Qxg4wQP/shaban-md.jpg",
   ALIVE_MSG: process.env.ALIVE_MSG || "Hello , I am alive now!!\n\n> > 𝛲𝛩𝑊𝛯𝑅𝐷 𝐵𝑌 ＧIᗰ𝛥𝛥",
-  MODE: process.env.MODE || "public"
+  MODE: process.env.MODE || "public",
+  AUTO_VOICE: process.env.AUTO_VOICE || "true",
+  AUTO_STICKER: process.env.AUTO_STICKER || "true",
+  AUTO_REPLY: process.env.AUTO_REPLY || "true",
 };
