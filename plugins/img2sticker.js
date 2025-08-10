@@ -1,5 +1,5 @@
 const { cmd, commands } = require("../command");
-const { Sticker, StickerTypes } = require("");
+const { Sticker, StickerTypes } = require("wa-sticker-formatter");
 const { downloadMediaMessage } = require("../lib/msg.js"); // Adjust the path as needed
 
 cmd(
@@ -53,8 +53,8 @@ cmd(
 
       // Create the sticker from the media
       const sticker = new Sticker(media, {
-        pack: "𝐑_𝐎_𝐁_𝐈_𝐍", // Sticker pack name
-        author: "𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋", // Sticker author name
+        pack: " 𝛲𝛩𝑊𝛯𝑅𝐷 𝐵𝑌 ＧIᗰ𝛥𝛥", // Sticker pack name
+        author: " 𝛲𝛩𝑊𝛯𝑅𝐷 𝐵𝑌 ＧIᗰ𝛥𝛥", // Sticker author name
         type: StickerTypes.FULL, // Sticker type (FULL or CROPPED)
         quality: 50, // Quality of the output sticker (0–100)
       });
