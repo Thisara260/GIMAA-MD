@@ -11,6 +11,8 @@ cmd({
 },
 async(robin, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
+    await robin.sendPresenceUpdate('recording', from);
+    await robin.sendMessage(from, { audio: { url: "https://github.com/ROBIN-MAX-YT/BOT-HELPER/raw/refs/heads/main/audio/Owner.mp3" }, mimetype: 'audio/mpeg', ptt: true }, { quoted: mek });
 return await robin.sendMessage(from,{image: {url: config.ALIVE_IMG},caption: config.ALIVE_MSG},{quoted: mek})
     
 }catch(e){
