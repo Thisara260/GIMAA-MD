@@ -10,7 +10,7 @@ cmd(
   {
     pattern: "tts",
     alias: ["voice", "speak"],
-    desc: "Convert text to a voice note (PTT). Usage: !tts [lang] <text>",
+    desc: "Convert text to a voice note (PTT). Usage: .tts [lang] <text>",
     category: "utility",
     filename: __filename,
   },
@@ -39,7 +39,7 @@ cmd(
       }
 
       if (!text || !text.trim()) {
-        return reply("Provide text or reply to a text message. Usage: !tts [lang] <text>");
+        return reply("Provide text or reply to a text message. Usage: .tts [lang] <text>");
       }
 
       // enforce length limit (google-tts-url limit per request ~200 chars)
