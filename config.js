@@ -15,5 +15,4 @@ module.exports = {
   AUTO_VOICE: process.env.AUTO_VOICE || "true",
   AUTO_STICKER: process.env.AUTO_STICKER || "true",
   AUTO_REPLY: process.env.AUTO_REPLY || "true",
-  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "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"
 };
