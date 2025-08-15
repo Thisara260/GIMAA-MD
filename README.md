@@ -73,6 +73,7 @@ jobs:
       run: npm start
 ```
 </details> 
+<img src='https://i.imgur.com/LyHic3i.gif'/>
 
 ## ⚠️ DISCLAIMER
 
