@@ -1,10 +1,3 @@
-/*
-🔧 Project      : MALVIN-XD
-👑 Creator      : Malvin King (Mr. Lord Malvin)
-📦 Repository   : https://github.com/XdKing2/MALVIN-XD
-📞 Support      : https://wa.me/263714757857
-*/
-
 const { malvin } = require('../malvin');
 const config = require('../settings');
 
@@ -38,7 +31,7 @@ malvin({
 
     // Send image + caption
     await malvin.sendMessage(from, {
-      image: { url: 'https://files.catbox.moe/01f9y1.jpg' },
+      image: { url: 'https://i.ibb.co/x8hP1DR4/shaban-md.jpg' },
       caption: `
 ╭── ❍ Gimaa-MD ❍
 │ ✦ 𝙽𝚊𝚖𝚎   : *${ownerName}*
