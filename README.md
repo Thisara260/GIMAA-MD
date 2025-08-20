@@ -16,8 +16,8 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
 
 > 📲 Pair Code Authentication
 
-[![Get Pairing Code : SITE 1](https://img.shields.io/badge/Get%20Pairing%20Code1-orange?style=for-the-badge&logo=opencv&logoColor=black)]([https://gimaa-md-v1-0-1.onrender.com](https://gimaa-md-pair-site-01-v3.onrender.com))
-[![Get Pairing Code : SITE 2](https://img.shields.io/badge/Get%20Pairing%20Code2-orange?style=for-the-badge&logo=opencv&logoColor=black)]([https://gimaa-md-v1-0-1-vglj.onrender.com/](https://gimaa-md-pair-site-02-v3.onrender.com))
+[![Get Pairing Code : SITE 1](https://img.shields.io/badge/Get%20Pairing%20Code1-orange?style=for-the-badge&logo=opencv&logoColor=black)] ([https://gimaa-md-v1-0-1.onrender.com](https://gimaa-md-pair-site-01-v3.onrender.com))
+[![Get Pairing Code : SITE 2](https://img.shields.io/badge/Get%20Pairing%20Code2-orange?style=for-the-badge&logo=opencv&logoColor=black)] ([https://gimaa-md-v1-0-1-vglj.onrender.com/](https://gimaa-md-pair-site-02-v3.onrender.com))
 
 ---
 
