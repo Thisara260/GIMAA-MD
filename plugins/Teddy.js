@@ -1,5 +1,5 @@
 smd({
-    cmdname: "teddy",    
+    pattern: "teddy",    
     type: "fun",    
     info: "cute teddy",   
     on: "text" ,
