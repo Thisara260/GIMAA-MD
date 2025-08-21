@@ -14,12 +14,14 @@ Authenticate using **one** of the methods below to generate your `Session ID`.
   <img src="https://i.imgur.com/LyHic3i.gif" alt="Authentication Flow Preview" />
 </p>
 
-> 📲 Pair Code Authentication
+### 📲 Pair Code Authentication
 
 [![Get Pairing Code-site-01](https://img.shields.io/badge/Get%20Pairing%20Code_Site_01-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://gimaa-md-pair-site-01-v3.onrender.com)
 [![Get Pairing Code-site-02](https://img.shields.io/badge/Get%20Pairing%20Code_site_02-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://gimaa-md-pair-site-02-v3.onrender.com)
 
 ---
+### 📲 Deploy On VPS
+[![Get Pairing Code-site-01](https://img.shields.io/badge/Deploy%20Whtasapp%20Bot_On_VPS-orange?style=for-the-badge&logo=opencv&logoColor=black)](https://deploy-gimaa-md-bot.onrender.com/)
 
 <br>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/>
