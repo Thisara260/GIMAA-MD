@@ -1,4 +1,4 @@
-const config = require('../settings'); 
+const config = require('../settings');  
 const { gimaa } = require('../gimaa');
 const { runtime } = require('../lib/functions');
 const os = require('os');
@@ -129,7 +129,7 @@ const menus = {
 *Available Commands:*
 *(Some commands are still in development)*
 ╔═══════════════════╗
-🌐 *${randomStyle(General Commands)}*:
+🌐 *${randomStyle("General Commands")}*:
 ║ ➤ .help or .menu
 ║ ➤ .ping
 ║ ➤ .alive
@@ -152,7 +152,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-📥 *${randomStyle(Downloader)}*:
+📥 *${randomStyle("Downloader")}*:
 ║ ➤ .play <song_name>
 ║ ➤ .song <song_name>
 ║ ➤ .instagram <link>
@@ -163,7 +163,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-👮‍♂️ *${randomStyle(Admin Commands)}*:
+👮‍♂️ *${randomStyle("Admin Commands")}*:
 ║ ➤ .ban @user
 ║ ➤ .promote @user
 ║ ➤ .demote @user
@@ -185,7 +185,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🔒 *${randomStyle(Owner Commands)}*:
+🔒 *${randomStyle("Owner Commands")}*:
 ║ ➤ .mode
 ║ ➤ .autostatus
 ║ ➤ .clearsession
@@ -196,7 +196,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🎨 *${randomStyle(Image/Sticker Commands)}*:
+🎨 *${randomStyle("Image/Sticker Commands")}*:
 ║ ➤ .blur <image>
 ║ ➤ .simage <reply to sticker>
 ║ ➤ .sticker <reply to image>
@@ -207,7 +207,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🤖 *${randomStyle(AI Commands)}*:
+🤖 *${randomStyle("AI Commands")}*:
 ║ ➤ .gpt <question>
 ║ ➤ .gemini <question>
 ║ ➤ .AI <prompt>
@@ -215,7 +215,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🎯 *${randomStyle(Fun Commands)}*:
+🎯 *${randomStyle("Fun Commands")}*:
 ║ ➤ .compliment @user
 ║ ➤ .insult @user
 ║ ➤ .flirt
@@ -230,7 +230,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🔤 *${randomStyle(Textmaker)}*:
+🔤 *${randomStyle("Textmaker")}*:
 ║ ➤ .metallic <text>
 ║ ➤ .ice <text>
 ║ ➤ .snow <text>
@@ -252,7 +252,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-💻 *${randomStyle(Github Commands)}*:
+💻 *${randomStyle("Github Commands")}*:
 ║ ➤ .git
 ║ ➤ .github
 ║ ➤ .sc
