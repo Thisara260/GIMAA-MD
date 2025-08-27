@@ -5,7 +5,7 @@ const os = require('os');
 const axios = require('axios');
 const fs = require('fs');
 const moment = require('moment-timezone');
-const { randomStyle } = require('./textStyles'); // Import random text styles
+const { randomStyle } = require('../lib/textStyles'); // Import random text styles
 
 // Simple logging function
 const log = (level, message, error = null) => {
