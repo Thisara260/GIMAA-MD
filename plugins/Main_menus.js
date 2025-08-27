@@ -1,11 +1,10 @@
-const config = require('../settings');  
+const config = require('../settings'); 
+const { malvin } = require('../malvin');
 const { runtime } = require('../lib/functions');
 const os = require('os');
 const axios = require('axios');
 const fs = require('fs');
 const moment = require('moment-timezone');
-const { randomStyle } = require('../lib/textStyles');
-
 
 // Simple logging function
 const log = (level, message, error = null) => {
@@ -114,9 +113,9 @@ const menus = {
     category: 'menu',
     react: '⚡',
     content: ({ time, date, platform, uptime }) => `
-┌──[ *${randomStyle(config.BOT_NAME)}* ]──
+┌──[ *${config.BOT_NAME}* ]──
 │
-│ 👑 Owner: ${randomStyle(config.OWNER_NAME)}
+│ 👑 Owner: ${config.OWNER_NAME}
 │ ⚙️ Mode: ${config.MODE}
 │ 💻 Platform: ${platform}
 │ 🧩 Type: NodeJs (Multi Device)
@@ -129,7 +128,7 @@ const menus = {
 *Available Commands:*
 *(Some commands are still in development)*
 ╔═══════════════════╗
-🌐 *${randomStyle("General Commands")}*:
+🌐 *General Commands*:
 ║ ➤ .help or .menu
 ║ ➤ .ping
 ║ ➤ .alive
@@ -152,18 +151,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-📥 *${randomStyle("Downloader")}*:
-║ ➤ .play <song_name>
-║ ➤ .song <song_name>
-║ ➤ .instagram <link>
-║ ➤ .facebook <link>
-║ ➤ .tiktok <link>
-║ ➤ .video <song name>
-║ ➤ .ytmp4 <Link>
-╚═══════════════════╝
-
-╔═══════════════════╗
-👮‍♂️ *${randomStyle("Admin Commands")}*:
+👮‍♂️ *Admin Commands*:
 ║ ➤ .ban @user
 ║ ➤ .promote @user
 ║ ➤ .demote @user
@@ -185,7 +173,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🔒 *${randomStyle("Owner Commands")}*:
+🔒 *Owner Commands*:
 ║ ➤ .mode
 ║ ➤ .autostatus
 ║ ➤ .clearsession
@@ -196,7 +184,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🎨 *${randomStyle("Image/Sticker Commands")}*:
+🎨 *Image/Sticker Commands*:
 ║ ➤ .blur <image>
 ║ ➤ .simage <reply to sticker>
 ║ ➤ .sticker <reply to image>
@@ -207,19 +195,19 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🤖 *${randomStyle("AI Commands")}*:
+🤖 *AI Commands*:
 ║ ➤ .gpt <question>
 ║ ➤ .gemini <question>
-║ ➤ .AI <prompt>
-║ ➤ .ai <prompt>
+║ ➤ .imagine <prompt>
+║ ➤ .flux <prompt>
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🎯 *${randomStyle("Fun Commands")}*:
+🎯 *Fun Commands*:
 ║ ➤ .compliment @user
 ║ ➤ .insult @user
-║ ➤ .flirt
-║ ➤ .shayari
+║ ➤ .hack
+║ ➤ .teddy
 ║ ➤ .goodnight
 ║ ➤ .roseday
 ║ ➤ .character @user
@@ -230,7 +218,7 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🔤 *${randomStyle("Textmaker")}*:
+🔤 *Textmaker*:
 ║ ➤ .metallic <text>
 ║ ➤ .ice <text>
 ║ ➤ .snow <text>
@@ -252,7 +240,18 @@ const menus = {
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-💻 *${randomStyle("Github Commands")}*:
+📥 *Downloader*:
+║ ➤ .play <song_name>
+║ ➤ .song <song_name>
+║ ➤ .instagram <link>
+║ ➤ .facebook <link>
+║ ➤ .tiktok <link>
+║ ➤ .video <song name>
+║ ➤ .ytmp4 <Link>
+╚═══════════════════╝
+
+╔═══════════════════╗
+💻 *Github Commands*:
 ║ ➤ .git
 ║ ➤ .github
 ║ ➤ .sc
@@ -265,6 +264,7 @@ const menus = {
     imageKey: null,
     audioUrl: config.MENU_AUDIO_URL || null,
   },
+  // Keep other menus the same, using gimaa
 };
 
 // Register menus
