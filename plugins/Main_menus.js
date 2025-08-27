@@ -1,5 +1,5 @@
 const config = require('../settings');  
-const { gimaa } = require('../gimaa');
+const { malvin } = require('../malvin');
 const { runtime } = require('../lib/functions');
 const os = require('os');
 const axios = require('axios');
